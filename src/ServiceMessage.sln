@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceMessage.ConsoleApp", "ServiceMessage.ConsoleApp\ServiceMessage.ConsoleApp.csproj", "{7565FEB2-6AED-4DA3-9463-2C528984B341}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{B1AA7171-A775-4220-8095-D2F32B85ABDD}"
+	ProjectSection(SolutionItems) = preProject
+		..\build\kafka-compose.yml = ..\build\kafka-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{4B015263-E294-417C-8591-D3180B7D406F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceMessage.ConsoleApp.Producer", "examples\ServiceMessage.ConsoleApp.Producer\ServiceMessage.ConsoleApp.Producer.csproj", "{CDDBDF46-0FFE-479E-8F21-F929FCC59D7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceMessage.ConsoleApp.Consumer", "examples\ServiceMessage.ConsoleApp.Consumer\ServiceMessage.ConsoleApp.Consumer.csproj", "{9C9A6A85-6F1C-4F0F-9B12-BA160426927F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7565FEB2-6AED-4DA3-9463-2C528984B341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7565FEB2-6AED-4DA3-9463-2C528984B341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7565FEB2-6AED-4DA3-9463-2C528984B341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7565FEB2-6AED-4DA3-9463-2C528984B341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDDBDF46-0FFE-479E-8F21-F929FCC59D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDDBDF46-0FFE-479E-8F21-F929FCC59D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDDBDF46-0FFE-479E-8F21-F929FCC59D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDDBDF46-0FFE-479E-8F21-F929FCC59D7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C9A6A85-6F1C-4F0F-9B12-BA160426927F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C9A6A85-6F1C-4F0F-9B12-BA160426927F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C9A6A85-6F1C-4F0F-9B12-BA160426927F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C9A6A85-6F1C-4F0F-9B12-BA160426927F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CDDBDF46-0FFE-479E-8F21-F929FCC59D7B} = {4B015263-E294-417C-8591-D3180B7D406F}
+		{9C9A6A85-6F1C-4F0F-9B12-BA160426927F} = {4B015263-E294-417C-8591-D3180B7D406F}
+	EndGlobalSection
+EndGlobal
