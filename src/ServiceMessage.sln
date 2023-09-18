@@ -1,10 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceMessage.ConsoleApp", "ServiceMessage.ConsoleApp\ServiceMessage.ConsoleApp.csproj", "{7565FEB2-6AED-4DA3-9463-2C528984B341}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{B1AA7171-A775-4220-8095-D2F32B85ABDD}"
 	ProjectSection(SolutionItems) = preProject
 		..\build\kafka-compose.yml = ..\build\kafka-compose.yml
+		..\build\commands.sh = ..\build\commands.sh
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{4B015263-E294-417C-8591-D3180B7D406F}"
@@ -13,16 +12,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceMessage.ConsoleApp.P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceMessage.ConsoleApp.Consumer", "examples\ServiceMessage.ConsoleApp.Consumer\ServiceMessage.ConsoleApp.Consumer.csproj", "{9C9A6A85-6F1C-4F0F-9B12-BA160426927F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceMessage.ConsoleApp", "examples\ServiceMessage.ConsoleApp\ServiceMessage.ConsoleApp.csproj", "{5E5154A3-9CDF-47B3-BEE3-480364C0FDDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceMessage", "ServiceMessage\ServiceMessage.csproj", "{5C69BCE9-4113-4CA7-A901-347AFDA9C3B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceMessage.Abstraction", "ServiceMessage.Abstraction\ServiceMessage.Abstraction.csproj", "{325DFBD3-2780-4204-B2AE-FC641A13A0FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceMessage.SourceGeneration", "ServiceMessage.SourceGeneration\ServiceMessage.SourceGeneration.csproj", "{465B44DC-33EF-419F-B0D1-8A0136E2A821}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceMessage.AspCore", "examples\ServiceMessage.AspCore\ServiceMessage.AspCore.csproj", "{6B0152F1-35F6-4416-AD1E-095C124BB129}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7565FEB2-6AED-4DA3-9463-2C528984B341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7565FEB2-6AED-4DA3-9463-2C528984B341}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7565FEB2-6AED-4DA3-9463-2C528984B341}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7565FEB2-6AED-4DA3-9463-2C528984B341}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CDDBDF46-0FFE-479E-8F21-F929FCC59D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CDDBDF46-0FFE-479E-8F21-F929FCC59D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDDBDF46-0FFE-479E-8F21-F929FCC59D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -31,9 +36,31 @@ Global
 		{9C9A6A85-6F1C-4F0F-9B12-BA160426927F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C9A6A85-6F1C-4F0F-9B12-BA160426927F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C9A6A85-6F1C-4F0F-9B12-BA160426927F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E5154A3-9CDF-47B3-BEE3-480364C0FDDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E5154A3-9CDF-47B3-BEE3-480364C0FDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E5154A3-9CDF-47B3-BEE3-480364C0FDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E5154A3-9CDF-47B3-BEE3-480364C0FDDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C69BCE9-4113-4CA7-A901-347AFDA9C3B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C69BCE9-4113-4CA7-A901-347AFDA9C3B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C69BCE9-4113-4CA7-A901-347AFDA9C3B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C69BCE9-4113-4CA7-A901-347AFDA9C3B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{325DFBD3-2780-4204-B2AE-FC641A13A0FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{325DFBD3-2780-4204-B2AE-FC641A13A0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{325DFBD3-2780-4204-B2AE-FC641A13A0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{325DFBD3-2780-4204-B2AE-FC641A13A0FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{465B44DC-33EF-419F-B0D1-8A0136E2A821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{465B44DC-33EF-419F-B0D1-8A0136E2A821}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{465B44DC-33EF-419F-B0D1-8A0136E2A821}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{465B44DC-33EF-419F-B0D1-8A0136E2A821}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B0152F1-35F6-4416-AD1E-095C124BB129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B0152F1-35F6-4416-AD1E-095C124BB129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B0152F1-35F6-4416-AD1E-095C124BB129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B0152F1-35F6-4416-AD1E-095C124BB129}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CDDBDF46-0FFE-479E-8F21-F929FCC59D7B} = {4B015263-E294-417C-8591-D3180B7D406F}
 		{9C9A6A85-6F1C-4F0F-9B12-BA160426927F} = {4B015263-E294-417C-8591-D3180B7D406F}
+		{5E5154A3-9CDF-47B3-BEE3-480364C0FDDE} = {4B015263-E294-417C-8591-D3180B7D406F}
+		{6B0152F1-35F6-4416-AD1E-095C124BB129} = {4B015263-E294-417C-8591-D3180B7D406F}
 	EndGlobalSection
 EndGlobal
