@@ -5,7 +5,7 @@ using ServiceMessage.Configuration;
 
 namespace ServiceMessage.Consumer;
 
-public class ServiceMessageConsumer : BackgroundService
+internal class ServiceMessageConsumer : BackgroundService
 {
     private readonly IConsumer<byte[], byte[]> _consumer;
     private readonly IServiceProvider _serviceProvider;

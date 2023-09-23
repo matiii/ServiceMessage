@@ -22,6 +22,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceMessage.SourceGenera
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceMessage.AspCore", "examples\ServiceMessage.AspCore\ServiceMessage.AspCore.csproj", "{6B0152F1-35F6-4416-AD1E-095C124BB129}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A3500EA1-8984-4CEA-A39E-5446D746EEB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{C84BCD7D-8E7E-42DB-ACF2-2C88BEABBAD9}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceMessage.SourceGeneration.Tests", "tests\ServiceMessage.SourceGeneration.Tests\ServiceMessage.SourceGeneration.Tests.csproj", "{FA945427-B5D9-460A-A82E-AFD3057559BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,11 +65,16 @@ Global
 		{6B0152F1-35F6-4416-AD1E-095C124BB129}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B0152F1-35F6-4416-AD1E-095C124BB129}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B0152F1-35F6-4416-AD1E-095C124BB129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA945427-B5D9-460A-A82E-AFD3057559BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA945427-B5D9-460A-A82E-AFD3057559BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA945427-B5D9-460A-A82E-AFD3057559BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA945427-B5D9-460A-A82E-AFD3057559BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CDDBDF46-0FFE-479E-8F21-F929FCC59D7B} = {4B015263-E294-417C-8591-D3180B7D406F}
 		{9C9A6A85-6F1C-4F0F-9B12-BA160426927F} = {4B015263-E294-417C-8591-D3180B7D406F}
 		{5E5154A3-9CDF-47B3-BEE3-480364C0FDDE} = {4B015263-E294-417C-8591-D3180B7D406F}
 		{6B0152F1-35F6-4416-AD1E-095C124BB129} = {4B015263-E294-417C-8591-D3180B7D406F}
+		{FA945427-B5D9-460A-A82E-AFD3057559BC} = {A3500EA1-8984-4CEA-A39E-5446D746EEB8}
 	EndGlobalSection
 EndGlobal

@@ -8,7 +8,7 @@ public class ServiceMessageOptions
     {
     }
 
-    public ProducerConfig ProducerConfig { get; set; }
+    public ProducerConfig? ProducerConfig { get; set; }
 
-    public ConsumerConfig ConsumerConfig { get; set; }
+    public ConsumerConfig? ConsumerConfig { get; set; }
 }
