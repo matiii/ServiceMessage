@@ -9,6 +9,7 @@ public class ServiceMessageGeneratorTests
     {
         // arrange
         var codeBase = """
+
 """;
         var expectedCode = """
     code will be defined here

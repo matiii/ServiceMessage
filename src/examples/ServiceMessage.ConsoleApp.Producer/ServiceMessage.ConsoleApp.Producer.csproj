@@ -14,10 +14,4 @@
         <PackageReference Include="Microsoft.Extensions.Configuration.Ini" Version="7.0.0"/>
     </ItemGroup>
 
-    <ItemGroup>
-        <Content Include="getting-started.properties">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </Content>
-    </ItemGroup>
-
 </Project>

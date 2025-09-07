@@ -2,8 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{B1AA7171-A775-4220-8095-D2F32B85ABDD}"
 	ProjectSection(SolutionItems) = preProject
-		..\build\kafka-compose.yml = ..\build\kafka-compose.yml
 		..\build\commands.sh = ..\build\commands.sh
+		..\build\config.json = ..\build\config.json
+		..\build\asb-compose.yml = ..\build\asb-compose.yml
+		..\build\.env = ..\build\.env
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{4B015263-E294-417C-8591-D3180B7D406F}"
